@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<div id="recommendation-popup">
+     <div class="recommendation" onclick="setRecommendedQuestion('มีแผนการเรียนอะไรบ้าง')">มีแผนการเรียนอะไรบ้าง</div>
+     <div class="recommendation" onclick="setRecommendedQuestion('อัสสัมชัญตัวย่ออะไร')">อัสสัมชัญตัวย่ออะไร</div>
+     <div class="recommendation" onclick="setRecommendedQuestion('การเดินทาง')">การเดินทาง</div>
+     <div class="recommendation" onclick="setRecommendedQuestion('ถามอะไรดี')">ถามอะไรดี</div>
+     <div class="recommendation" onclick="setRecommendedQuestion('เข้าโรงเรียนกี่โมง')">เข้าโรงเรียนกี่โมง</div>
+ </div>
+ 
+
+ <div id="chat-container">
+        <div id="chatbox">
+            <div id="chatlog">
+                <!-- แสดงข้อความทั้งหมดที่เกิดขึ้นในแชท -->
+            </div>
+            <div id="input-area">
+                <input type="text" id="user_input" placeholder="พิมพ์ข้อความของคุณ..." onkeydown="checkEnter(event)" />
+                <button onclick="sendMessage()">ส่งข้อความ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatbox2.js"></script>
+</body>
+</html>
